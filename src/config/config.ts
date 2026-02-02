@@ -17,8 +17,8 @@ const siteConfig = {
       'Summarize your education or certifications briefly and highlight your practical work.\n' +
       '\n' +
       'Optional: Add notable books, workshops, or training you deliver.',
-    tagline: 'Add a concise personal tagline here.',
-    location: 'Your City, Country',
+    tagline: 'I am hero',
+    location: 'Kolkata, India',
   },
 
   seo: {
@@ -51,16 +51,16 @@ const siteConfig = {
 
   education: [
     {
-      institution: 'Your Institution',
-      degree: 'Your Degree',
-      year: 'YYYY–YYYY',
+      institution: 'Christ University Bannerghatta Road Campus',
+      degree: 'BSc Economics with Data Science',
+      year: '2025-2028',
       image: getAsset('images/education/placeholder.png'),
       description: ['Brief description of your focus or thesis'],
     },
     {
-      institution: 'Another Institution',
-      degree: 'Another Degree or Certificate',
-      year: 'YYYY–YYYY',
+      institution: 'Sushila Birla Girls School',
+      degree: 'High School',
+      year: '2012-2025',
       image: getAsset('images/education/placeholder.png'),
       description: ['Key topics or skills learned'],
     },
