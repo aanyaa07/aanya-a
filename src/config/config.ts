@@ -14,7 +14,7 @@ const siteConfig = {
       '\n' +
       'I have hands-on experience through Python-based projects, data internships, and finance coursework, and I actively participate in student organizations.\n' +
       '\n' +
-      'I aim to build data-driven, impactful solutions by combining analytical thinking, creativity, and leadership skills.'
+      'I aim to build data-driven, impactful solutions by combining analytical thinking, creativity, and leadership skills.',
     tagline: 'Data • Economics • Technology • Analytics',
     location: 'Kolkata, India',
   },
