@@ -73,7 +73,7 @@ const siteConfig = {
       specialization: true,
       file: getAsset('images/education/Certifications/download.svg'),
       certificates: [
-        { name: 'Course 1', file: getAsset('images/education/Certifications/download.svg') },
+        { name: 'Introduction to Finance, Accounting, Modeling and Valuation', file: getAsset('images/education/Certifications/download.svg') },
         { name: 'Course 2', file: getAsset('images/education/Certifications/download.svg') },
       ],
     },
