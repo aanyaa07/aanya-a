@@ -24,8 +24,12 @@ const siteConfig = {
     description: "Portfolio website showcasing your education, research, projects, and experience.",
   },
 
-  animatedText: ['Your Role', 'Your Focus', 'Your Interest', 'Builder'],
-
+animatedText: [
+  'Economics & Data Science Student',
+  'Data Analytics Enthusiast',
+  'Python Developer',
+  'Aspiring Data Scientist',
+],
   navigation: [
     { name: 'Home', url: '/' },
     { name: 'Projects', url: '/projects' },
@@ -39,12 +43,7 @@ const siteConfig = {
 
   // Static blog entries. Use getAsset so the URL respects NEXT_PUBLIC_BASE_PATH / next.config.basePath
   // Add more entries here as you add more static HTML blog files under public/static_page/
-  blogs: [
-    {
-      title: 'Your Blog Title',
-      url: getAsset('static_page/project_management_blog.html'), // Replace with your static HTML page
-    },
-  ],
+  blogs: [],
 
 
   education: [
