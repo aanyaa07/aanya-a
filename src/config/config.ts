@@ -1,4 +1,4 @@
-// src/config/config.ts 
+// src/config/config.ts
 
 export const getAsset = (path: string) => {
   return `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/${path}`;
@@ -8,110 +8,151 @@ const siteConfig = {
   personal: {
     name: 'Aanya Agarwal',
     title: 'Economics & Data Science Undergraduate | Data Analytics Enthusiast',
-    image: getAsset('images/profile.png'),
+    image: getAsset('images/profile.png'), // Customize or replace with your profile image
     description:
       'I am an Economics and Data Science undergraduate at Christ University with a strong interest in data analytics, technology, and business strategy.\n' +
       '\n' +
       'I have hands-on experience through Python-based projects, data internships, and finance coursework, and I actively participate in student organizations.\n' +
       '\n' +
-      'I aim to build data-driven, impactful solutions by combining analytical thinking, creativity, and leadership skills.',
+      'I aim to build data-driven, impactful solutions by combining analytical thinking, creativity, and leadership skills.\n' +
+      '\n' +
+      'Optional: Add notable books, workshops, or training you deliver.',
     tagline: 'Data • Economics • Technology • Analytics',
-    location: 'Bangalore, India',
+    location: 'Kolkata, India',
   },
 
   seo: {
     title: 'Aanya Agarwal – Economics & Data Science Portfolio',
-    description: 'Portfolio website showcasing education, projects, internships, certifications, and data analytics experience.',
+    description: "Portfolio website showcasing your education, research, projects, and experience.",
   },
 
-  animatedText: [
-    'Economics & Data Science Student',
-    'Data Analytics Enthusiast',
-    'Python Developer',
-    'Future Data Scientist',
-  ],
+  animatedText: ['Your Role', 'Your Focus', 'Your Interest', 'Builder'],
 
   navigation: [
     { name: 'Home', url: '/' },
     { name: 'Projects', url: '/projects' },
+    { name: 'Research', url: '/research' },
     { name: 'Education', url: '/education' },
     { name: 'Experience', url: '/experience' },
-    { name: 'Certifications', url: '/certifications' },
+    { name: 'Blogs', url: '/blogs' },
     { name: 'Resume', url: '/resume' },
     { name: 'Contact', url: '/contact' },
   ],
 
-  blogs: [],
+  // Static blog entries. Use getAsset so the URL respects NEXT_PUBLIC_BASE_PATH / next.config.basePath
+  // Add more entries here as you add more static HTML blog files under public/static_page/
+  blogs: [
+    {
+      title: 'Your Blog Title',
+      url: getAsset('static_page/project_management_blog.html'), // Replace with your static HTML page
+    },
+  ],
+
 
   education: [
     {
       institution: 'Christ University Bannerghatta Road Campus',
       degree: 'BSc Economics with Data Science (GPA: 3.75/4)',
-      year: '2025 – 2028',
-      image: getAsset('images/education/christ.png'),
-      description: [
-        'Focus on economics, data analytics, programming, and business strategy',
-      ],
+      year: '2025-2028',
+      image: getAsset('images/education/placeholder.png'),
+      description: ['Focus on economics, data analytics, programming, and business strategy'],
     },
     {
-      institution: 'Sushila Birla Girls’ School',
-      degree: 'Secondary (86%) | Higher Secondary (91%)',
-      year: '2012 – 2025',
-      image: getAsset('images/education/sbgs.png'),
-      description: [
-        'Strong academic foundation with focus on analytical and technical skills',
-      ],
+      institution: 'Sushila Birla Girls School',
+      degree: 'High School',
+      year: '2012-2025',
+      image: getAsset('images/education/placeholder.png'),
+      description: ['Strong academic foundation with focus on analytical and technical skills'],
     },
   ],
 
+// ✅ Unified MOOC + Certifications Section
   certifications: [
     {
-      title: 'Introduction to Finance, Accounting, Modeling and Valuation',
-      specialization: false,
-      file: getAsset('images/education/Certifications/udemy.svg'),
+      title: 'Your Certificate or Specialization',
+      specialization: true,
+      file: getAsset('images/education/Certifications/download.svg'),
       certificates: [
-        {
-          name: 'Udemy Certification – Finance & Valuation',
-          file: getAsset('images/education/Certifications/udemy.svg'),
-        },
+        { name: 'Course 1', file: getAsset('images/education/Certifications/download.svg') },
+        { name: 'Course 2', file: getAsset('images/education/Certifications/download.svg') },
       ],
+    },
+    {
+      title: 'Another Certificate',
+      file: getAsset('images/education/Certifications/download.svg'),
     },
   ],
 
+
+
+  // ✅ Experience section updated
   experience: [
     {
-      title: 'Data Analytics Intern',
-      cardImage: getAsset('images/experience/geniushub.png'),
-      place: 'GeniusHub (Avadna Private Services Limited) – Remote',
-      time: 'Dec 2023 – Jan 2024',
-      desp: [
-        'Worked on data cleaning and preliminary data analysis',
-        'Developed understanding of analytical workflows and result interpretation',
-        'Built foundational skills in data-driven decision making',
-      ],
+      title: 'Your Role',
+      cardImage: getAsset('images/experience/placeholder.png'),
+      place: 'Your Organization',
+      time: '(MMM YYYY – Present)',
+      desp: ['Brief responsibility 1', 'Brief responsibility 2'],
+    },
+    {
+      title: 'Previous Role',
+      cardImage: getAsset('images/experience/placeholder.png'),
+      place: 'Previous Organization',
+      time: '(MMM YYYY – MMM YYYY)',
+      desp: ['Key contribution 1', 'Key contribution 2'],
     },
   ],
 
+
+  // ✅ Projects section updated
   projects: [
     {
-      title: 'School Fest Management System (Python)',
-      cardImage: getAsset('images/project/python_project.png'),
-      description:
-        'Python-based system for registrations, scheduling, participant records, and volunteer management with automated reporting and centralized data handling.',
-      Githublink: 'https://github.com/your-username/school-fest-management-system',
+      title: 'Project Title 1',
+      cardImage: getAsset('images/project/placeholder.png'),
+      description: 'Short description of your project and what it does...',
+      Githublink: 'https://github.com/your-username/your-project',
+    },
+    {
+      title: 'Project Title 2',
+      cardImage: getAsset('images/project/placeholder.png'),
+      description: 'Another project summary...',
+      Githublink: 'https://github.com/your-username/another-project',
     },
   ],
 
-  research: [],
 
-  books: [],
+  research: [
+    {
+      title: 'Your Paper or Research Title',
+      authors: 'Your Name, Collaborator Name',
+      conferences: 'Conference or Journal, Publisher',
+      researchYr: 2024,
+  image: getAsset('images/research/placeholder.png'),
+      citation: {
+        vancouver:
+          'Author A, Author B. Title of the work. Venue, Year. DOI/URL.',
+      },
+      abstract:
+        'One or two sentences summarizing the contribution...',
+      link: 'https://example.com/your-publication',
+    },
+  ],
+
+  books: [
+    {
+      title: 'Your Book Title',
+      description: 'Short description of your book or resource.',
+      image: getAsset('images/book_cover_placeholder.png'),
+      link: 'https://example.com/your-book',
+    },
+  ],
 
   contact: {
-    email: 'aanya.agarwal@bscedsh.christuniversity.in',
+    email: 'your.email@example.com',
     linkedin: 'https://www.linkedin.com/in/your-linkedin/',
     github: 'https://github.com/your-username',
-    googleScholar: '',
-    orcid: '',
+    googleScholar: 'https://scholar.google.com/citations?user=YOURID',
+    orcid: 'https://orcid.org/0000-0000-0000-0000',
   },
 };
 
