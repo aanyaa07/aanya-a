@@ -14,9 +14,7 @@ const siteConfig = {
       '\n' +
       'I have hands-on experience through Python-based projects, data internships, and finance coursework, and I actively participate in student organizations.\n' +
       '\n' +
-      'I aim to build data-driven, impactful solutions by combining analytical thinking, creativity, and leadership skills.\n' +
-      '\n' +
-      'Optional: Add notable books, workshops, or training you deliver.',
+      'I aim to build data-driven, impactful solutions by combining analytical thinking, creativity, and leadership skills.'
     tagline: 'Data • Economics • Technology • Analytics',
     location: 'Kolkata, India',
   },
@@ -52,7 +50,7 @@ const siteConfig = {
   education: [
     {
       institution: 'Christ University Bannerghatta Road Campus',
-      degree: 'BSc Economics with Data Science (GPA: 3.75/4)',
+      degree: 'BSc Economics with Data Science',
       year: '2025-2028',
       image: getAsset('images/education/placeholder.png'),
       description: ['Focus on economics, data analytics, programming, and business strategy'],
@@ -69,17 +67,12 @@ const siteConfig = {
 // ✅ Unified MOOC + Certifications Section
   certifications: [
     {
-      title: 'Your Certificate or Specialization',
-      specialization: true,
+      title: 'Introduction to Finance, Accounting, Modeling and Valuation',
+      specialization: false,
       file: getAsset('images/education/Certifications/download.svg'),
       certificates: [
-        { name: 'Introduction to Finance, Accounting, Modeling and Valuation', file: getAsset('images/education/Certifications/download.svg') },
-        { name: 'Course 2', file: getAsset('images/education/Certifications/download.svg') },
+        { name: 'Udemy Certification – Finance & Valuation', file: getAsset('images/education/Certifications/download.svg') },
       ],
-    },
-    {
-      title: 'Another Certificate',
-      file: getAsset('images/education/Certifications/download.svg'),
     },
   ],
 
@@ -88,18 +81,12 @@ const siteConfig = {
   // ✅ Experience section updated
   experience: [
     {
-      title: 'Your Role',
-      cardImage: getAsset('images/experience/placeholder.png'),
-      place: 'Your Organization',
-      time: '(MMM YYYY – Present)',
-      desp: ['Brief responsibility 1', 'Brief responsibility 2'],
-    },
-    {
-      title: 'Previous Role',
-      cardImage: getAsset('images/experience/placeholder.png'),
-      place: 'Previous Organization',
-      time: '(MMM YYYY – MMM YYYY)',
-      desp: ['Key contribution 1', 'Key contribution 2'],
+      title: 'Data Analytics Intern',
+      place: 'GeniusHub (Avadna Private Services Limited) – Remote',
+      time: '(Dec 2023 – Jan 2024)',
+      desp: ['Worked on data cleaning and preliminary data analysis',
+        'Developed understanding of analytical workflows and result interpretation',
+        'Built foundational skills in data-driven decision making'],
     },
   ],
 
@@ -107,52 +94,19 @@ const siteConfig = {
   // ✅ Projects section updated
   projects: [
     {
-      title: 'Project Title 1',
-      cardImage: getAsset('images/project/placeholder.png'),
-      description: 'Short description of your project and what it does...',
-      Githublink: 'https://github.com/your-username/your-project',
-    },
-    {
-      title: 'Project Title 2',
-      cardImage: getAsset('images/project/placeholder.png'),
-      description: 'Another project summary...',
-      Githublink: 'https://github.com/your-username/another-project',
+      title: 'School Fest Management System (Python)',
+      description: 'Python-based system for registrations, scheduling, participant records, and volunteer management with automated reporting and centralized data handling.',
     },
   ],
 
 
-  research: [
-    {
-      title: 'Your Paper or Research Title',
-      authors: 'Your Name, Collaborator Name',
-      conferences: 'Conference or Journal, Publisher',
-      researchYr: 2024,
-  image: getAsset('images/research/placeholder.png'),
-      citation: {
-        vancouver:
-          'Author A, Author B. Title of the work. Venue, Year. DOI/URL.',
-      },
-      abstract:
-        'One or two sentences summarizing the contribution...',
-      link: 'https://example.com/your-publication',
-    },
-  ],
+  research: [],
 
-  books: [
-    {
-      title: 'Your Book Title',
-      description: 'Short description of your book or resource.',
-      image: getAsset('images/book_cover_placeholder.png'),
-      link: 'https://example.com/your-book',
-    },
-  ],
+  books: [],
 
   contact: {
-    email: 'your.email@example.com',
-    linkedin: 'https://www.linkedin.com/in/your-linkedin/',
-    github: 'https://github.com/your-username',
-    googleScholar: 'https://scholar.google.com/citations?user=YOURID',
-    orcid: 'https://orcid.org/0000-0000-0000-0000',
+    email: 'aanya.agarwal@bscedsh.christuniversity.in',
+    github: 'https://github.com/aanyaa07',
   },
 };
 
